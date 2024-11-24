@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header class="naslov">
+        <h1>TO DO</h1>
+    </header>
+
+    <div class="container">
+           <div class="main">    
+
+            <form action="" method="post" id="task-form">
+
+                <input type="text" name="Title" id="task-title" placeholder="Title..." >
+
+                <br><br>
+
+                <textarea name="Notes" id="task-desc" placeholder="Notes"></textarea>
+
+                <br><br>
+
+                <div class="buttons">
+                    <button type="submit" value="Submit">Submit</button>
+                    <button type="reset" value="Reset">Reset</button>
+                </div>
+
+            </form>
+
+        </div><!--main-->
+    </div><!--container-->
+
+        <div id="lista" class="lista display-none">
+            <h2>Tasks</h2>
+            <ul id="task-list"></ul>
+        </div>
+        
+        <script src="script.js"></script>
+</body>
+
+</html>
